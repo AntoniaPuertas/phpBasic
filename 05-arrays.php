@@ -133,3 +133,59 @@ foreach($edad as $clave => $valor){
 echo '<br>';
 
 //Ejercicio: Crea un array con 5 productos de supermercado. Muestra los productos en formato de lista en HTML
+$supermercado = array("Manzana", "Peras", "Leche", "Batidos");
+echo '<p>Lista de la compra</p>';
+echo '<ul>';
+
+for($i = 0 ; $i < count($supermercado) ; $i++){
+    echo '<li>' . $supermercado[$i] . '</li>';
+}
+
+foreach($supermercado as $producto){
+    echo "<li>$producto</li>";
+}
+
+echo '</ul>';
+
+//Crea un array asociativo con nombres y números de teléfono.
+$contactos = array(
+    "MariSol" => '123 456 789', 
+    "Jesús" => '987 654 321', 
+    "Lucía" => '741 258 963'
+);
+//Muestra la información en una tabla HTML
+echo '<table border="1">';
+echo '<tr><th>Nombre</th><th>Teléfono</th></tr>';
+foreach($contactos as $nombre => $telefono){
+    echo "<tr>
+            <td>$nombre</td>
+            <td>$telefono</td>
+        </tr>";
+}
+echo '</table>';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+        </tr>
+        <tr>
+            <td>Manolo</td>
+            <td>123456789</td>
+        </tr>
+        <tr>
+            <td>MariSol</td>
+            <td>321654987</td>
+        </tr>
+    </table>
+</body>
+</html>

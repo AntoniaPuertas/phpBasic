@@ -14,13 +14,6 @@
 
 echo '<p>Notas de los alumnos / alumnas</p>';
 echo '<table border="1">';
-// echo '<tr>
-//       <th>Nombre</th>
-//       <th>Matemáticas</th>
-//       <th>Historia</th>
-//       <th>PHP</th>
-//       <th>Media</th>
-//       </tr>';
       $ponerCabecera = true;
       foreach($alumnos as $nombre => $datos){
          //$datos es un array asociativo con las asignaturas y las notas
